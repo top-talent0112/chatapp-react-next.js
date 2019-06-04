@@ -1,0 +1,27 @@
+{
+  "name": "realtime-chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "keywords": [],
+  "author": "Dream High",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "next": "^8.1.0",
+    "pusher": "^2.2.0",
+    "pusher-js": "^4.4.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "sentiment": "^5.0.1"
+  }
+}
