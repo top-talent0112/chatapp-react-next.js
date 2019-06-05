@@ -39,6 +39,7 @@ app.prepare()
     const chatHistory = { messages: [] };
     
     server.post('/message', (req, res, next) => {
+      console.log("message", req.body);
       const { user = null, message = '', timestamp = +new Date } = req.body;
       const sentimentScore = sentiment.analyze(message).score;
       
@@ -49,6 +50,7 @@ app.prepare()
     });
     
     server.post('/messages', (req, res, next) => {
+      console.log("I have got messages");
       res.json({ ...chatHistory, status: 'success' });
     });
 
